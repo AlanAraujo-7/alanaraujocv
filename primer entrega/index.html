@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Araujo Alan</title>
     <link rel="stylesheet" href="estilo.css">
@@ -16,14 +16,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Fasthand&family=Inter:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Fasthand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="./script.js" type="text/javascript"></script>
   </head>
   <body class="pagina">
     <header class="encabezado">
       <img src="araujo-alan.jpeg" alt="Alan Araujo" class="encabezado__imagen">
     <div class="encabezado-contenido">
       <h1 class="encabezado__titulo">ARAUJO ALAN</h1>
-      <h2 class="encabezado__subtitulo">TECNICO ELECTRONICO</h2>
+      <h2 class="encabezado__subtitulo">TÈCNICO ELECTRÓNICO</h2>
     </div>
     </header>
     <section class="columna-izquierda">
@@ -35,6 +36,30 @@
         <li>>HTML</li>
         <li>>CSS</li>
       </ul>
+    </section>
+    <section class="columna-derecha">
+      <h3 class="columna-derecha__titulo">.EXPERIENCIA LABORAL:</h3>
+      <ul class="columna-derecha__lista">
+        <li>
+            <p class="lead">OPERARIO EN FÁBRICA GOOD FOOD S.A</p>Operario con diversas tareas en el sector de elaboración de alimentos.<br>2023
+        </li>
+
+        <li>
+            <p>AYUDANTE EN TALLER MECÁNICO</p>Conocimientos adquiridos sobre herramientas y procesos de la mecánica automotriz.<br>2022
+        </li>
+        <li>
+            <p>AYUDANTE EN FÁBRICA DE PASTAS</p>Atención al cliente, tareas en el área de logística de la empresa.<br>2021-2022
+        </li>
+      </ul>
+      <h3 class="columna-derecha__titulo2">.ESTUDIOS:</h3>
+      <ul class="columna-derecha__lista">
+        <li>
+            <p>UNIVERSIDAD NACIONAL DEL OESTE</p>Tecnicatura universitaria en tecnologías web.<br>Actualidad.
+        </li>
+        <li>
+            <p>E.E.S.TÉCNICA Nº1</p>Título en trámite de técnico electrónico.<br>2016-2022
+        </li>
+      </ul>
       <h3 class="columna-izquierda__titulo"> .CONTACTO:</h3>
       <ul class="columna-izquierda__lista">
         <li class="columna-izquierda__lista-whatsapp"><a href="https://wa.me\qr\5KRBNYQF4GMDA1" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a></li>
@@ -42,48 +67,62 @@
         <li class="columna-izquierda__lista-instagram"><a href="https://www.instagram.com/alan.araujo7_/" target="_blank"> <i class="fa-brands fa-instagram"></i></a></li>
       </ul>
     </section>
-    <section class="columna-derecha">
-      <h3 class="columna-derecha__titulo">.EXPERIENCIA LABORAL:</h3>
-      <ul class="columna-derecha__lista">
-        <li>
-            <h4>OPERARIO EN FÁBRICA GOOD FOOD S.A</h4>Operario con diversas tareas en el sector de elaboración de alimentos.<br>2023
-        </li>
-
-        <li>
-            <h4>AYUDANTE EN TALLER MECÁNICO</h4>Conocimientos adquiridos sobre herramientas y procesos de la mecánica automotriz.<br>2022
-        </li>
-        <li>
-            <h4>AYUDANTE EN FÁBRICA DE PASTAS</h4>Atención al cliente, tareas en el área de logística de la empresa.<br>2021-2022
-        </li>
-      </ul>
-      <h3 class="columna-derecha__titulo2">.ESTUDIOS:</h3>
-      <ul class="columna-derecha__lista">
-        <li>
-            <h4>UNIVERSIDAD NACIONAL DEL OESTE</h4>Tecnicatura universitaria en tecnologías web.<br>Actualidad.
-        </li>
-        <li>
-            <h4>E.E.S.TÉCNICA Nº1</h4>Título en trámite de técnico electrónico.<br>2016-2022
-        </li>
-      </ul>
-    </section>
-    <section class="formulario">
+    <section class="container">
       <h3 class="formulario__titulo">.ÁREA DE CONTACTO SIMPLIFICADA:</h3>
-      <form class="formulario__form">
+      <form class="row" id="form" onsubmit="return validarForm()">
+        <div class="col-6">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre">
+      </div>
+      <div class="row">
+      <div class="col-6">
         <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" required>
+        <input type="email" id="email" name="email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-        <input type="submit" value="Enviar">
+        <textarea id="mensaje" name="mensaje"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class=col-6>
+        <label for="sueldo">sueldo ofrecido:</label>
+          <input type="number" id="sueldo" name="sueldo">         
+          <label for="moneda">Moneda:</label>
+          <select id="moneda" name="moneda">
+            <option value="ARS">ARS$</option>
+            <option value="EUR">€</option>
+            <option value="USD">$USD</option>
+          </select>
+      </div>
+    </div>
+        <input type="submit" onclick="enviarForm()" value="Enviar">
       </form>
+      <div id="error"></div>
       </section>
       <footer class="footer">
         <div class="footer__logo"><i class="fa-solid fa-spider"></i></div>   
         <div class="footer__content">Todos los derechos reservados al dueño de este curriculum vitae.</div>        
         <div class="footer__author">Creado por: Araujo Alan.</div>
       </footer>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <div>
+        <table id="tablaDatos">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>mensaje</th>
+              <th>sueldo</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+      
   </body>
  </html>
