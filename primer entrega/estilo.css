@@ -1,19 +1,23 @@
 .pagina{
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
   box-sizing: border-box;
+  box-shadow: 5px 2px 14px 10px #eeeaea;
   font-family: 'inter', sans-serif;
-  margin: 0;
+  margin: auto;
   padding: 0;
   position:relative;
   padding-bottom:27%;
   min-height: 210vh;
   color:rgb(0, 0, 167);
+  letter-spacing: 1px;
   }
 .encabezado {
-  background-color: rgb(4, 136, 198);
-  display: flex;
-  align-items: center;
-  font-family: "dongle", sans-serif;
-  padding: 20px;
+background-color: rgb(4, 136, 198);
+display: flex;
+align-items: center;
+padding: 10px;
 }
 .encabezado__imagen {
   width: 150px;
@@ -24,36 +28,36 @@
   transition: .7s;
 }
 .encabezado__imagen:hover{
-width: 300px;
-height: 310px;
+width: 200px;
+height: 210px;
 border-radius: 50%;
 }
 .encabezado-contenido {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
 }
 .encabezado__titulo {
   color: #ffffff;
-  font-size: 70px;
+  font-size: 30px;
   margin: 0;
   text-align: center;
-  transition: 0.5s;
+  transition: 1s;
 }
 .encabezado__titulo:hover {
-  font-size: 80px;
+  font-size: 32px;
   color:rgb(249, 7, 7);
 }
 .encabezado__subtitulo {
   color: #ffffff;
-  font-size: 50px;
+  font-size: 20px;
   margin: 0;
   text-align: center;
-  transition: .5s;
+  transition: 1s;
 }
 .encabezado__subtitulo:hover{
   color:rgb(5, 5, 248);
-  font-size: 60px;
+  font-size: 22px;
 }
 .columna-izquierda {
   float: left;
@@ -107,7 +111,7 @@ border-radius: 50%;
   font-size: 16px;
   line-height: 1.5;
 }
-.columna-izquierda__lista a {
+.columna-izquierda__lista li a {
   display: block;
   width: 40px;
   height: 40px;
@@ -125,6 +129,7 @@ border-radius: 50%;
 }
 .columna-izquierda__lista-linkedin a{
   background-color: #091f9b;
+  display: inline;
 }
 .columna-izquierda__lista-linkedin a:hover {
   background-color: rgba(1, 133, 215, 0.37); 
